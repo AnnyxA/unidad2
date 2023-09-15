@@ -1,0 +1,29 @@
+
+public class CalculadoraDeDivisas {
+import java.util.Scanner;
+
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Calculadora de Conversión de Pesos Mexicanos a Otras Monedas");
+        System.out.print("Ingresa la cantidad en pesos mexicanos: ");
+        double pesosMexicanos = scanner.nextDouble();
+
+        double tasaDolar = 0.050; 
+        double tasaEuro = 0.042; 
+        double tasaYen = 5.59;   
+
+        
+        double dolares = pesosMexicanos * tasaDolar;
+        double euros = pesosMexicanos * tasaEuro;
+        double yenes = pesosMexicanos * tasaYen;
+
+        
+        System.out.println(pesosMexicanos + " pesos mexicanos son equivalentes a:");
+        System.out.println(dolares + " dólares");
+        System.out.println(euros + " euros");
+        System.out.println(yenes + " yenes");
+
+        scanner.close();
+    }
+}
